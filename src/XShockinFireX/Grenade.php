@@ -27,8 +27,10 @@ class Grenade extends PluginBase implements Listener {
 	    $explosion = new Explosion($pos, $this->getConfig()->get("explode-radius"), NULL, $this->getConfig->get("drop-items"));
 	    if($this->getConfig()->get("explode-blocks")) {
 	        $explosion->explodeB();
+		$entity->getLevel()->addSound($explodesound);
 	    } else {
 		$explosion->explodeA();
+		$entity->getLevel()->addSound($explodesound);
             }
         }
     }
