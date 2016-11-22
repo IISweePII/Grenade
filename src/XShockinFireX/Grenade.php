@@ -3,8 +3,9 @@ namespace XShockinFireX;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
-use pocketmine\entity\Snowball
+use pocketmine\entity\Snowball;
 use pocketmine\Level;
+use pocketmine\level\sound\ExplodeSound;
 use pocketmine\utils\Config;
 use pocketmine\level\Explosion;
 use pocketmine\level\Position;
